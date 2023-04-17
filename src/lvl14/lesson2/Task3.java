@@ -1,15 +1,16 @@
 package lvl14.lesson2;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * В классе Solution объявлены методы, которые тебе нужно реализовать следующим образом:
- *
+ * <p>
  *     removeBugWithFor(ArrayList<String>) - должен удалить строку из списка, если она содержит слово bug, используя цикл for и счетчик.
  *     removeBugWithWhile(ArrayList<String>) - должен удалить строку из списка, если она содержит слово bug, используя цикл while и метод iterator().
  *     removeBugWithCopy(ArrayList<String>) - должен удалить строку из списка, если она содержит слово bug, используя цикл for-each и копию списка.
  *     В слове bug может быть разный регистр букв (BUg, BuG, и т.д.).
- *
+ * <p>
  * Метод main реализован для вашего кода и не участвует в проверке.
  */
 
@@ -45,15 +46,32 @@ public class Task3 {
     }
 
     public static void removeBugWithFor(ArrayList<String> list) {
-        //напишите тут ваш код
 
+        for(int i = 0; i < list.size(); i++){
+            if(list.get(i).toLowerCase().contains("bug")){
+                list.remove(i);
+                i--;
+            }
+        }
     }
 
     public static void removeBugWithWhile(ArrayList<String> list) {
-        //напишите тут ваш код
+        Iterator<String> iterator = list.iterator();
+
+        while (iterator.hasNext()){
+            if(iterator.next().toLowerCase().contains("bug")){
+                iterator.remove();
+            }
+        }
     }
 
     public static void removeBugWithCopy(ArrayList<String> list) {
-        //напишите тут ваш код
+        ArrayList<String> copyList = new ArrayList<>(list);
+
+        for(String str: copyList){
+            if(str.toLowerCase().contains("bug")){
+                list.remove(str);
+            }
+        }
     }
 }
