@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * В классе Solution объявлены методы, которые тебе нужно реализовать следующим образом:
+ * В классе Task3 объявлены методы, которые тебе нужно реализовать следующим образом:
  * <p>
  *     removeBugWithFor(ArrayList<String>) - должен удалить строку из списка, если она содержит слово bug, используя цикл for и счетчик.
  *     removeBugWithWhile(ArrayList<String>) - должен удалить строку из списка, если она содержит слово bug, используя цикл while и метод iterator().
@@ -15,7 +15,6 @@ import java.util.Iterator;
  */
 
 public class Task3 {
-
 
     public static void main(String[] args) {
         ArrayList<String> words = new ArrayList<>();

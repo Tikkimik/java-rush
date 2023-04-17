@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 /**
- * В классе Solution есть метод print(HashSet<String>),
+ * В классе Task1 есть метод print(HashSet<String>),
  * который должен выводить в консоли все элементы множества, используя iterator().
  * Метод main не участвует в проверке.
  */

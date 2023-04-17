@@ -23,7 +23,6 @@ public class Task1 {
     }
 
     public static HashSet<String> arrayToHashSet(String[] strings) {
-        //напишите тут ваш код
         return new HashSet<>(List.of(strings));
     }
 }
